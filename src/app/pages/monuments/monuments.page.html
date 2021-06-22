@@ -1,0 +1,163 @@
+<ion-header style=" background-image: url('../../assets/leaning-tower-of-pisa-svgrepo-com.svg');
+ background-color: #cccccc;">
+  <ion-toolbar>
+    <ion-title style="margin-left: 17%; font-weight: bolder;">Monuments</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content>
+  <select style="margin-top: 3%; margin-left: 8%;" name="ville" id="ville" (change)="onChange($event)">
+    <option value="">Tout</option>
+    <option value="CASABLANCA">CASABLACA</option>
+    <option value="EL JADIDA">EL JADIDA</option>
+    <option value="AGADIR">AGADIR</option>
+    <option value="RABAT">RABAT</option>
+    <option value="1285">AGADIR UNIVERSITAIRE</option>
+    <option value="41">AL HAOUZ    </option>
+    <option value="51">AL HOCEIMA  </option>
+    <option value="61">AL ISMAILIA </option>
+    <option value="66">AOUSSERED</option>
+    <option value="71">ASSA ZAG    </option>
+    <option value="81">AZILAL      </option>
+    <option value="111">BEN SLIMANE </option>
+    <option value="91">BENI MELLAL </option>
+    <option value="113">BERKANE</option>
+    <option value="601">BERRECHID</option>
+    <option value="121">BOUJDOUR    </option>
+    <option value="1006">BOUKNADEL</option>
+    <option value="131">BOULEMANE   </option>
+    <option value="11">CASA-AIN CHOCK HAY HASSANI </option>
+    <option value="21">CASA-AIN SEBAA HAY MOHAMEDI</option>
+    <option value="31">CASA-AL FIDA DERB SULTAN      </option>
+    <option value="1000">CASA-ANFA SUPERIEUR</option>
+    <option value="622">CASA-BEN MSIK-SIDI OTHMANE</option>
+    <option value="376">CASA-MOULAY RACHID</option>
+    <option value="1283">CASA-NOUACER</option>
+    <option value="423">CASA-SIDI BERNOUSSI</option>
+    <option value="141">CASABLANCA-ANFA</option>
+    <option value="151">CHEFCHAOUEN </option>
+    <option value="161">CHICHAOUA   </option>
+    <option value="163">CHTOUKA AIT BAHA</option>
+    <option value="2020">DRIOUCH</option>
+    <option value="171">EL HAJEB    </option>
+    <option value="181">EL JADIDA   </option>
+    <option value="1282">EL JADIDA UNIVERSITE CHOUAIB D</option>
+    <option value="191">EL KELAA DES SRAGHNA     </option>
+    <option value="201">ERRACHIDIA  </option>
+    <option value="221">ES-SEMARA   </option>
+    <option value="211">ESSAOUIRA   </option>
+    <option value="231">FES EL JADID DAR DBIBAGH </option>
+    <option value="241">FES MEDINA  </option>
+    <option value="251">FIGUIG      </option>
+    <option value="1258">FKIH BEN SALEH</option>
+    <option value="261">GUELMIM     </option>
+    <option value="1004">GUERCIF</option>
+    <option value="271">IFRANE      </option>
+    <option value="273">INEZGANE AIT MELLOUL </option>
+    <option value="999">INTERNATIONAL</option>
+    <option value="275">JERADA      </option>
+    <option value="281">KENITRA     </option>
+    <option value="1281">KENITRA UNIVERSITAIRE</option>
+    <option value="291">KHEMISSET   </option>
+    <option value="301">KHENIFRA    </option>
+    <option value="311">KHOURIBGA   </option>
+    <option value="321">LAAYOUNE    </option>
+    <option value="331">LARACHE     </option>
+    <option value="333">MACHOUAR DECASABLANCA  </option>
+    <option value="351">MARRAKACH - MENARA</option>
+    <option value="341">MARRAKECH GUELIZ-ENNAKHIL</option>
+    <option value="950">MDIQ</option>
+    <option value="101">MEDIOUNA</option>
+    <option value="361">MEKNES-EL MENZEH</option>
+    <option value="1005">MIDELT</option>
+    <option value="371">MOHAMMEDIA  </option>
+    <option value="381">NADOR       </option>
+    <option value="391">OUAD EDDAHAB</option>
+    <option value="401">OUARZAZATE </option>
+    <option value="705">OUAZZANE</option>
+    <option value="411">OUJDA ANGAD</option>
+    <option value="1286">OUJDA ANGAD UNIVERSITAIRE</option>
+    <option value="1003">PLUSIEURS VILLES</option>
+    <option value="421">RABAT AGDAL</option>
+    <option value="1002">RABAT CENTRE</option>
+    <option value="422">RABAT HASSAN</option>
+    <option value="524">RABAT IRFANE</option>
+    <option value="980">RHAMNA</option>
+    <option value="431">SAFI        </option>
+    <option value="441">SALE        </option>
+    <option value="451">SEFROU      </option>
+    <option value="461">SETTAT      </option>
+    <option value="471">SIDI BERNOUSSI-ZENATTA</option>
+    <option value="604">SIDI IFNI</option>
+    <option value="481">SIDI KACEM  </option>
+    <option value="1001">SIDI SLIMANE</option>
+    <option value="1284">SIDI YAHYA (M)</option>
+    <option value="491">SIDI YOUSSEF BEN ALI</option>
+    <option value="501">SKHIRATE TEMARA      </option>
+    <option value="436">SLE-AL JADIDA</option>
+    <option value="2001">Sidi Bennour</option>
+    <option value="521">TAN-TAN     </option>
+    <option value="511">TANGER-ASSILAH</option>
+    <option value="227">TANGER-FAHS-ANJRA</option>
+    <option value="531">TAOUNATE    </option>
+    <option value="533">TAOURIRT</option>
+    <option value="541">TAROUDANT  </option>
+    <option value="551">TATA        </option>
+    <option value="561">TAZA        </option>
+    <option value="571">TETOUAN     </option>
+    <option value="700">TINGHIR</option>
+    <option value="581">TIZNIT      </option>
+    <option value="2021">Youssoufia</option>
+    <option value="587">ZAGORA</option>
+    <option value="591">ZOUAGHA  MOULAY YACOUB</option>
+
+    </select>
+  <ion-list>
+    <ion-item button *ngFor = "let item of data" (click)="showDescription(item.id)">
+      <img slot="start" width="75" src={{item.photo}}>
+      <ion-label>
+        <h1 style="text-align: center;"><strong>{{item.nom}}</strong></h1>
+        <h3 style="text-align: center;">...</h3>
+        <h3 style="text-align: center;">{{item.ville}}</h3>
+      </ion-label>
+      </ion-item>
+      <ion-item>
+      <ion-tabs>
+        <ion-tab-bar slot="bottom">
+        <ion-tab-button >
+          <ion-label>Monuments</ion-label>
+          <ion-icon name="business"></ion-icon>
+        </ion-tab-button>
+        <ion-tab-button (click)="visitsTab()" >
+          <ion-label>Visits</ion-label>
+          <ion-icon name="location"></ion-icon>
+        </ion-tab-button>
+        <ion-tab-button (click)="logout()" >
+          <ion-label>LogOut</ion-label>
+          <ion-icon name="log-out"></ion-icon>
+        </ion-tab-button>
+
+      </ion-tab-bar>
+    </ion-tabs>
+  </ion-item>
+    </ion-list>
+
+
+
+
+<!-- <ion-tabs>
+      <ion-tab-bar slot="bottom">
+      <ion-tab-button >
+        <ion-label>Monuments</ion-label>
+        <ion-icon name="business-outline"></ion-icon>
+      </ion-tab-button>
+      <ion-tab-button (click)="visitsTab()" >
+        <ion-label>Visits</ion-label>
+        <ion-icon name="navigate-circle-outline"></ion-icon>
+      </ion-tab-button>
+      
+    </ion-tab-bar>
+  
+  </ion-tabs> -->

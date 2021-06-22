@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Sign In</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+          <ion-col>
+          <img class="image" src="../../assets/leaning-tower-of-pisa-svgrepo-com.svg" width=50% height=30% style="margin-left:25%; margin-top:10%; margin-bottom:10%">
+      </ion-col>
+    <ion-row>
+
+      <ion-col>
+        <ion-item>
+          <ion-label position="stacked">Email :</ion-label>
+          <ion-input id="email"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-label position="stacked">Password :</ion-label>
+          <ion-input id="password"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button color="secondary" id="signin" (click)="signin()" style="border-radius: 40px; width:80%;margin-top: 10%; margin-left:10%">
+          <ion-icon slot="start"></ion-icon>
+          Log In
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

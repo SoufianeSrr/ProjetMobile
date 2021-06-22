@@ -1,0 +1,39 @@
+<ion-header style=" background-image: url('../../assets/leaning-tower-of-pisa-svgrepo-com.svg');
+ background-color: #cccccc;">
+  <ion-toolbar>
+    <ion-title style="margin-left: 23%; font-weight: bolder;">Visits</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+
+  <ion-list>
+    <ion-item *ngFor = "let item of data">
+      <ion-label>
+        <h1 style="text-align: center;"><strong>{{item.nom}}</strong></h1>
+        <h3 style="text-align: center;">{{item.ville}}</h3>
+        <h3 style="text-align: center;">{{item.date}}</h3>
+      </ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+
+<ion-tabs>
+      <ion-tab-bar slot="bottom">
+      <ion-tab-button (click)="monumentsTab()">
+        <ion-label>Monuments</ion-label>
+        <ion-icon name="business"></ion-icon>
+      </ion-tab-button>
+      <ion-tab-button >
+        <ion-label>Visits</ion-label>
+        <ion-icon name="location"></ion-icon>
+      </ion-tab-button>
+      <ion-tab-button (click)="logout()" >
+          <ion-label>LogOut</ion-label>
+          <ion-icon name="log-out"></ion-icon>
+        </ion-tab-button>
+      
+    </ion-tab-bar>
+  
+  </ion-tabs>
